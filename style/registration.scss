@@ -1,0 +1,74 @@
+.registration {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  &__video-bg {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+
+  h1 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 15px;
+    margin: 20px auto;
+  }
+
+  form {
+    width: 350px;
+    padding: 10px 40px 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(8, 8, 41);
+    opacity: .8;
+
+    #login{
+      width: 40%;
+    }
+
+    #pass{
+      width: 40%;
+    }
+
+    input {
+      margin-bottom: 15px;
+      padding-left: 15px;
+      border-radius: 4px;
+      
+      &:focus{
+        background-color: rgb(242, 236, 229);
+      }
+    }
+
+    div{
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    a{
+      color: blue;
+      width: 100px;
+      height: 35px;
+      border: blue 1px solid;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: .3s;
+
+      &:hover{
+        background-color: blue;
+        color: white;
+      }
+    }
+  }
+}
